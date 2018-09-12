@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="appBar" type="id" />
+    <item name="card" type="id" />
+    <item name="card_thumbnail" type="id" />
+    <item name="rating" type="id" />
+    <item name="listKost" type="id" />
+
+</resources>
