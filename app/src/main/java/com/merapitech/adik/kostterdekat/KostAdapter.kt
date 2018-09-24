@@ -1,5 +1,6 @@
 package com.merapitech.adik.kostterdekat
 
+import android.content.Context
 import android.support.v7.view.menu.ActionMenuItemView
 import android.support.v7.widget.RecyclerView
 import android.view.View
@@ -8,7 +9,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import org.jetbrains.anko.AnkoContext
 
+
 class KostAdapter(var list: ArrayList<Kost> = arrayListOf()) : RecyclerView.Adapter<KostAdapter.MyKostHolder>() {
+    
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): KostAdapter.MyKostHolder {
@@ -21,6 +24,8 @@ class KostAdapter(var list: ArrayList<Kost> = arrayListOf()) : RecyclerView.Adap
 
     override fun onBindViewHolder(holder: KostAdapter.MyKostHolder, position: Int) {
         val kost = list[position]
+
+
         holder.imgUrl.setImageResource(kost.imgUrl)
         holder.namaKost.text = kost.namaKost
         holder.alamatKost.text = kost.alamatKost

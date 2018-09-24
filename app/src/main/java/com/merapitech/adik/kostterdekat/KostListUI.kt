@@ -130,7 +130,12 @@ class KostListUI : AnkoComponent<ViewGroup> {
                 leftMargin = dip(16)
                 rightMargin = dip(16)
                 bottomMargin = dip(8)
+                isClickable = true
+                isFocusable = true
+
             }
+            radius = 3f
+            cardElevation = 8f
             relativeLayout {
                 lparams{
                     width = matchParent
@@ -153,16 +158,17 @@ class KostListUI : AnkoComponent<ViewGroup> {
 
                     textView {
                         id = namaKost
-                        text = "Sherlock"
+                        text = "Nama Kost"
                         textSize = 18f
                         textColor = Color.BLACK // <- it is sp, no worries
                         typeface = Typeface.DEFAULT_BOLD
                         /*textColor = Color.*//*WHITE*/
+                       /* Typeface.createFromAsset(assets, "@font/monserrat_regular.ttf")*/
                     }
 
                     textView {
                         id = alamatKost
-                        text = "2009"
+                        text = "alamat kost"
                         textSize = 14f
                         maxHeight = dip(16)
                         /*textColor = Color.WHITE*/
@@ -231,7 +237,7 @@ class KostListUI : AnkoComponent<ViewGroup> {
 
                     textView {
                         id = hargaKost
-                        text = "2009"
+                        text = "Harga Kost"
                         textSize = 19f
                         typeface = Typeface.DEFAULT_BOLD
                         textColor = resources.getColor(R.color.colorPrimary)
@@ -248,5 +254,7 @@ class KostListUI : AnkoComponent<ViewGroup> {
             }
 
         }
+
     }
+
 }

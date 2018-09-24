@@ -9,4 +9,8 @@
         <!--<item name="android:fontFamily">@font/montserrat_regular</item>-->
     </style>
 
+    <style name="customRatingBar" parent="android:style/Widget.Material.RatingBar.Small">
+
+    </style>
+
 </resources>

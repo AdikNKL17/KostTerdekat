@@ -27,7 +27,7 @@ class MainUI : AnkoComponent<MainActivity> {
                 height = matchParent
             }
             backgroundResource = R.color.colorBG
-            appBarLayout {
+            verticalLayout {
 
                 id = R.id.appBar
                 toolbar {
